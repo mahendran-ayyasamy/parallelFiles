@@ -1,0 +1,12 @@
+spring:
+  thymeleaf:
+    cache : false
+    enabled: true
+    prefix: classpath:/templates/
+    suffix: .html
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .html 
+server:
+  port: 6969

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Mahendran's Parallel File Processing</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+	<section class="my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mx-auto">
+					<h3>Mahendran's Spring WebFlux and Project Reactive Scheduler based file converter</h3>
+					<p th:text="${message}" th:if="${message ne null}"
+						class="alert alert-primary"></p>
+					<p th:text="${status}" th:if="${status ne null}"
+						class="alert alert-primary"></p>
+					<form method="post" th:action="@{/upload}"
+						enctype="multipart/form-data">
+						<div class="form-group">
+							<input type="file" name="file" class="form-control-file" multiple>
+						</div>
+						<button type="submit" class="btn btn-success">Upload Files</button>
+					</form>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
